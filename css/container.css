@@ -5,7 +5,7 @@
     height: 100vh;
 }
 
-.menuLeft {
+.menu-left {
     border-right: 1px solid #808080;
     background-color: #0086e6;
     width: 250px;
@@ -17,25 +17,25 @@
     color: #ffffff;
     padding-left: 5%;
 }
-.menuLeft h2 {
+.menu-left h2 {
     padding-left: 20px;
     font-size: 30px;
     color: #ffffff;
 }
 
-.menuLeft input {
+.menu-left input {
     width: calc(80%);
     height: 35px;
 }
 
-#menuList {
+#menu-list {
     list-style-type: none;
     padding: 10px;
     margin: 0;
 }
 
-#menuList li a {
-    padding: 12px;
+#menu-list li a {
+    padding: 20px;
     text-decoration: none;
     font-size: 20px;
     font-family: Arial;
@@ -43,13 +43,13 @@
     display: block;
 }
 
-#menuList li a:hover {
+#menu-list li a:hover {
     background-color: #0077cc;
     font-family: Arial;
     font-size: 25px;
 }
 
-.menuRight {
+.menu-right {
     background-color: #ffffff;
     width: 70%;
     height: 100px;

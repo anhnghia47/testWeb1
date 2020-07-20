@@ -1,0 +1,36 @@
+.img-overview {
+    background: url('./logo/Contents/images/iconMenu.png') no-repeat -5px -5px;
+    width: 20px;
+    height: 16px;
+    border: none;
+}
+
+.img-report {
+    background: url('./logo/Contents/images/iconMenu.png') no-repeat -3px -194px;
+    width: 19px;
+    height: 19px;
+    border: none;
+}
+.img-buy {
+    background: url('./logo/Contents/images/iconMenu.png') no-repeat -1px -377px;
+    width: 24px;
+    height: 19px;
+    height: 19px;
+}
+.img-ware-house {
+    background: url('./logo/Contents/images/iconMenu.png') no-repeat -4px -40px;
+    width: 19px;
+    height: 20px;
+}
+.img-cash-pund {
+    background: url('./logo/Contents/images/iconMenu.png') no-repeat -7px -81px;
+    width: 12px;
+    height: 20px;
+}
+
+.img-setting {
+    background: url('./logo/Contents/images/iconMenu.png') no-repeat -2px -234px;
+    width: 22px;
+    height: 22px;
+    background-color: #0973b9;
+}

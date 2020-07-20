@@ -1,13 +1,13 @@
 .container {
-    border: 1px solid #808080;
-    background-color: #0094ff;
+    display: flex;
+    border: 1px solid #808080; 
     width: 100%;
-    height: 100vh;
+    height:auto;
 }
 
-.menu-left {
+.container-left {
     border-right: 1px solid #808080;
-    background-color: #0086e6;
+    background-color: #0973b9;
     width: 250px;
     height: 100%;
     padding-top: 2px;
@@ -17,41 +17,198 @@
     color: #ffffff;
     padding-left: 5%;
 }
-.menu-left h2 {
+.container-left h2 {
     padding-left: 20px;
     font-size: 30px;
     color: #ffffff;
 }
 
-.menu-left input {
+.container-left input {
     width: calc(80%);
     height: 35px;
 }
 
-#menu-list {
+.container-left #menu-list {
     list-style-type: none;
     padding: 10px;
     margin: 0;
 }
 
-#menu-list li a {
-    padding: 20px;
+.container-left #menu-list li a {
+    padding: 10px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 15px;
     font-family: Arial;
     color: #ffffff;
     display: block;
+    border-bottom: 2px solid #0059b3;
 }
 
-#menu-list li a:hover {
-    background-color: #0077cc;
+.container-left #menu-list li a:hover {
+    background-color: #0080ff;
     font-family: Arial;
-    font-size: 25px;
+    font-size: 20px;
 }
 
-.menu-right {
+.container-right {
+    width: 100%;
+    height: auto;
     background-color: #ffffff;
+
+}
+
+.container-right .name-selected{
+    padding-left: 10px;
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.container-right .name-selected .name-selected-left{
     width: 70%;
-    height: 100px;
-    background-color: #f2f2f2;
+    height: 50px;
+}
+
+.container-right .name-selected .name-selected-left #name-sld{
+    font-size: 25px;
+    font-family: Arial;
+}
+
+.container-right .name-selected .name-selected-right{
+    padding-top: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    display: flex;
+}
+
+.container-right .name-selected .name-selected-right #back{
+    font-size: 12px;
+    padding: 5px;
+    margin-right: 5px;
+}
+.container-right .name-selected .name-selected-right #respond{
+    font-size: 12px;
+    padding: 5px;
+}
+.container-right .table-result{
+    padding: 10px;
+    height: calc(100% - 75px);
+
+}
+
+.container-right .table-result .table-option {
+    width: calc(100%-2px);
+    height: 30px;
+    border-style: solid;
+    border: 2px solid #ddd;
+    background-color: #d9d9d9;
+    align-items: center;
+    display: flex;
+}
+
+.container-right .table-result .table-option .icon-leftest{
+    padding-right: 20px;
+}
+.container-right .table-result .table-option a{ 
+    color: #000000;
+    font-family: Arial;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.container-right .table-result .table-option a:hover{ 
+    color: #0080ff;
+}
+
+.container-right .table-result .table-option{
+    display: flex;
+}
+.container-right .table-result .table-option a .table-option-icon{
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+.icon-rightest{
+    border-left: 2px solid #b3b3b3;
+}
+
+
+.table-result .table-content .content-header{
+    width: 100%;
+    height: 40px;
+}
+.table-result .table-content{
+    width: 100%;
+    height: 88%;
+}
+
+.table-result .table-content .table-main{
+    max-height: 570px;
+}
+.table-result .table-content table {
+  font-family: Arial;
+  font-size: 12px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-result .table-content table td, .table-content table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.table-result .table-content table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.table-result .table-content table tr:hover {
+    background-color:#b3d9ff;
+}
+.table-result .table-content-tail{
+    width: 100%;
+    height: 25px;
+    background-color: #d9d9d9;
+    display: flex;
+    box-shadow: 0 4px 10px -2px gray;
+}
+
+.table-result .table-content-tail .tail-pre{
+    padding-top: 5px;
+
+}
+.table-result .table-content-tail .tail-pre a{
+    padding-top: 2px;
+    margin-left: 15px;
+}
+
+.table-result .table-content-tail .page-index{
+    display: flex;
+    padding-left: 10px;
+}
+.table-result .table-content-tail .page-index p{
+    text-align: center;
+    padding-bottom: 10px;
+    margin: 5px;
+}
+.table-result .table-content-tail .tail-next{
+    padding-top: 5px;
+
+}
+.table-result .table-content-tail .tail-next a{
+    padding-top: 2px;
+    margin-left: 15px;
+}
+.table-content-tail .tail-button{
+    display: flex;
+    width: 60%;
+}
+
+.table-result .table-content-tail .tail-info{
+    display: flex;
+    margin-left: auto;
+}
+.table-result .table-content-tail .tail-info p{
+    padding-bottom: 10px;
+    margin: 5px;
+    font-size: 13px;
 }

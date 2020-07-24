@@ -1,0 +1,232 @@
+.customer-add {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial;
+    display: none;
+}
+
+    .customer-add .customer-add-content {
+        width: 680px;
+        height: 400px;
+        background-color: #0973b9;
+        border-radius: 4px;
+        min-width: 680px;
+        min-height: 400px;
+    }
+
+        .customer-add .customer-add-content .title {
+            width: 100%;
+            height: 5%;
+            display: flex;
+            padding: 10px;
+            padding-top: 15px;
+            color: #ffffff;
+        }
+
+            .customer-add .customer-add-content .title .close {
+                padding-right: 20px;
+                margin-left: auto;
+                cursor: pointer;
+            }
+
+                .customer-add .customer-add-content .title .close:hover {
+                    color: #ff0000;
+                }
+
+        .customer-add .customer-add-content .content {
+            background-color: #ffffff;
+            height: 82%;
+            padding: 10px;
+            margin: 5px;
+            margin-top: 0px;
+            font-size: 15px;
+        }
+
+            .customer-add .customer-add-content .content .content-id-name {
+                display: flex;
+                padding-bottom: 10px;
+            }
+
+                .customer-add .customer-add-content .content .content-id-name .content-id-name-left {
+                    margin-right: auto;
+                    display: flex;
+                }
+
+                    .customer-add .customer-add-content .content .content-id-name .content-id-name-left #customer_id {
+                        margin-left: 10px;
+                    }
+
+                .customer-add .customer-add-content .content .content-id-name .content-id-name-right {
+                    margin-left: auto;
+                    display: flex;
+                }
+
+                    .customer-add .customer-add-content .content .content-id-name .content-id-name-right #customer_name {
+                        margin-left: 10px;
+                    }
+
+            .customer-add .customer-add-content .content .content-code {
+                display: flex;
+                padding-bottom: 10px;
+            }
+
+                .customer-add .customer-add-content .content .content-code #customer_code {
+                    margin-left: 14px;
+                }
+
+            .customer-add .customer-add-content .content .content-group {
+                display: flex;
+                padding-bottom: 10px;
+            }
+
+                .customer-add .customer-add-content .content .content-group #customer_group {
+                    margin-left: 12px;
+                }
+
+            .customer-add .customer-add-content .content .content-phone {
+                display: flex;
+                padding-bottom: 10px;
+            }
+
+                .customer-add .customer-add-content .content .content-phone #customer_phone {
+                    margin-left: 26px;
+                }
+
+            .customer-add .customer-add-content .content .content-birthday {
+                display: flex;
+                padding-bottom: 10px;
+            }
+
+                .customer-add .customer-add-content .content .content-birthday #customer_birthday {
+                    margin-left: 67px;
+                }
+
+            .customer-add .customer-add-content .content .content-company {
+                display: flex;
+                padding-bottom: 10px;
+            }
+
+                .customer-add .customer-add-content .content .content-company #customer_cpn {
+                    margin-left: 55px;
+                    width: 508px;
+                }
+
+            .customer-add .customer-add-content .content .content-taxcode {
+                display: flex;
+                padding-bottom: 10px;
+            }
+
+                    .customer-add .customer-add-content .content .content-taxcode #customer_tax_code {
+                        margin-left: 58px;
+                    }
+
+            .customer-add .customer-add-content .content .content-email-is5Food {
+                display: flex;
+                padding-bottom: 10px;
+            }
+
+                .customer-add .customer-add-content .content .content-email #customer_email {
+                    margin-left: 91px;
+                    margin-right: 189px;
+                }
+            .customer-add .customer-add-content .content .content-is5Food #customer_is5Food {
+                margin-left: 10px;
+            }
+
+            .customer-add .customer-add-content .content .content-address {
+                display: flex;
+                padding-bottom: 10px;
+            }
+
+                .customer-add .customer-add-content .content .content-address #customer_address {
+                    margin-left: 85px;
+                    width: 510px
+                }
+
+            .customer-add .customer-add-content .content .content-comment {
+                display: flex;
+                padding-bottom: 10px;
+            }
+
+                .customer-add .customer-add-content .content .content-comment #customer_cmt {
+                    margin-left: 80px;
+                    width: 510px;
+                    height: 40px;
+                }
+
+            .customer-add .customer-add-content .content .content-button {
+                display: flex;
+            }
+
+                .customer-add .customer-add-content .content .content-button .content-button-left {
+                    width: 80px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 25px;
+                    left: 5px;
+                }
+
+                    .customer-add .customer-add-content .content .content-button .content-button-left .content-button-left-help {
+                        background: url('Contents/images/IconSprite.png') no-repeat 0 -1599px;
+                        width: 16px;
+                        height: 17px;
+                        padding-left: 2px;
+                    }
+
+                    .customer-add .customer-add-content .content .content-button .content-button-left:hover {
+                        color: #0080ff;
+                    }
+
+                .customer-add .customer-add-content .content .content-button .content-button-right {
+                    width: auto;
+                    justify-content: center;
+                    display: flex;
+                    padding-left: 360px;
+                }
+
+                .customer-add .customer-add-content .content .content-button .content-button-right-cf {
+                    width: 100px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 25px;
+                    padding-right: 10px;
+                }
+
+                    .customer-add .customer-add-content .content .content-button .content-button-right-cf:hover {
+                        color: #0080ff;
+                    }
+
+                    .customer-add .customer-add-content .content .content-button .content-button-right-cf .cf-icon {
+                        background: url('Contents/images/IconSprite.png') no-repeat 0 -735px;
+                        width: 16px;
+                        height: 17px;
+                        padding-right: 5px;
+                    }
+
+                .customer-add .customer-add-content .content .content-button .content-button-right-dl {
+                    width: 100px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 25px;
+                    margin-left: 10px;
+                }
+
+                    .customer-add .customer-add-content .content .content-button .content-button-right-dl:hover {
+                        color: #0080ff;
+                    }
+
+                    .customer-add .customer-add-content .content .content-button .content-button-right-dl .dl-icon {
+                        background: url('Contents/images/IconSprite.png') no-repeat 0 -1952px;
+                        width: 15px;
+                        height: 15px;
+                        padding-right: 5px;
+                    }

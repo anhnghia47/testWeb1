@@ -1,0 +1,67 @@
+﻿.customer-delete {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial;
+    display: none;
+}
+
+    .customer-delete .customer-delete-content {
+        width: 300px;
+        height: 150px;
+        background-color: #0973b9;
+        border-radius: 4px;
+        min-width: 300px;
+        min-height: 150px;
+    }
+
+
+        .customer-delete .customer-delete-content .content .messenge {
+            font-family: Arial;
+            font-size: 20px;
+            color: #ffffff;
+            height: 50px;
+            padding-top: 30px;
+            text-align: center;
+            margin: 10px;
+        }
+
+        .customer-delete .customer-delete-content .content .content-button {
+            display: flex;
+            margin: 10px;
+            padding-top: 20px;
+            width: 100%;
+        }
+
+            .customer-delete .content-button .content-button-cf {
+                left: 0px;
+                display: flex;
+            }
+
+    .customer-delete .content-button .content-button-cf:hover, .content-button-dl:hover {
+        color: #0080ff;
+    }
+
+    .customer-delete .content-button .content-button-dl {
+        margin-left: auto;
+        margin-right: 20px;
+        display: flex;
+    }
+
+.customer-delete .content-button .cf-icon {
+    background: url('Contents/images/IconSprite.png') no-repeat 0 -735px;
+    width: 16px;
+    height: 17px;
+    padding-right: 5px;
+}
+.customer-delete .content-button .dl-icon {
+    background: url('Contents/images/IconSprite.png') no-repeat 0 -1952px;
+    width: 15px;
+    height: 15px;
+    padding-right: 5px;
+}

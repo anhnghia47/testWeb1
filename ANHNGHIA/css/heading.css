@@ -1,0 +1,103 @@
+.header {
+    display: flex;
+    position: relative;
+    border: 1px solid #808080;
+    background-color: #0973b9;
+    width: 100%;
+    height: 60px;
+}
+
+    .header .header-left {
+        display: flex;
+        position: relative;
+        height: 100%;
+        width: 50%;
+    }
+
+        .header .header-left .header-logo {
+            align-items: center;
+            display: flex;
+            padding-left: 20px;
+            padding-top: 10px;
+        }
+
+            .header .header-left .header-logo .header-logo-left {
+                background-image: url("Contents/images/icon-left-header.png");
+                width: 30px;
+                height: 30px;
+                background-repeat: no-repeat;
+            }
+
+            .header .header-left .header-logo .header-logo-right {
+                background-image: url("Contents/images/logo-text.png");
+                width: 120px;
+                height: 32px;
+                background-repeat: no-repeat;
+            }
+
+        .header .header-left .drop-restaurent {
+            padding: 15px;
+            padding-left: 80px;
+        }
+
+            .header .header-left .drop-restaurent select {
+                width: 150px;
+                height: 30px;
+                line-height: 55px;
+                background-color: #005082;
+                color: #ffffff;
+                border: none;
+                padding-left: 5px;
+                font-size: 12px;
+            }
+
+    .header .header-right {
+        display: flex;
+        position: relative;
+        height: 100%;
+        width: 50%;
+    }
+
+        .header .header-right .header-language {
+            display: flex;
+        }
+
+        .header .header-right .drop-language {
+            padding: 15px;
+            padding-left: 50px;
+        }
+
+            .header .header-right .drop-language select {
+                width: 150px;
+                height: 30px;
+                background-color: #005082;
+                color: #ffffff;
+                border: none;
+                padding-left: 5px;
+                font-size: 12px;
+            }
+
+        .header .header-right .header-language .header-right-info {
+            padding-top: 20px;
+        }
+
+        .header .header-right .header-right-info {
+            width: 20px;
+        }
+
+        .header .header-right .header-login {
+            padding: 15px;
+            display: flex;
+            margin-left: auto;
+        }
+
+            .header .header-right .header-login .header-login-icon {
+            }
+
+            .header .header-right .header-login .header-login-text select {
+                border: none;
+                margin: 5px 0px 0px 5px;
+                color: #ffffff;
+                background-color: #0973b9;
+                font-size: 12px;
+            }

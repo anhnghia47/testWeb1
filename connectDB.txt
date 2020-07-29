@@ -1,0 +1,32 @@
+var customers = new List<Customer>();
+            string connectionString = "erver=35.194.166.58;port=3306;user=nvmanh;password=12345678@Abc;database=MISADemo_NTNGHIA";
+            // Khởi tạo đối tượng kết nối db
+            SqlConnection sqlConnection = new SqlConnection(connectionString);
+            // Khởi tạo đối tượng SQL
+            SqlCommand sqlCommand = sqlConnection.CreateCommand();
+            sqlCommand.CommandText = "SELECT * FROM Customer c";
+
+            sqlConnection.Open();
+            SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
+
+            while (sqlDataReader.Read())
+            {
+                var customer = new Customer();
+                for(int i = 0; i < sqlDataReader.FieldCount; i++)
+                {
+                    var columnName = sqlDataReader.GetName(i);
+                    var value = sqlDataReader.GetValue(i);
+                    var property = sqlDataReader.GetType().GetProperty(columnName);
+
+                    // Gán dữ liệu cho property tương ứng
+                    if(property != null && value != DBNull.Value)
+                    {
+                        property.SetValue(customer, value);
+                    }
+                }
+                // Thêm khách hàng vào danh sách khách hàng
+                customers.Add(customer);
+            }
+
+            // Đóng kết nối 
+            sqlConnection.Close();

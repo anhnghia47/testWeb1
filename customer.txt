@@ -1,0 +1,84 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace MISA.CukCuk08.Models
+{
+    public class Customer
+    {
+        public static List<Customer> listCustomer = new List<Customer>
+        {
+            new Customer() {CustomerCode = "KH0000024", CustomerGroup = "212", CustomerName = "Nguyễn Trọng Nghĩa", CompanyName = "MISA", CustomerBirthday = new DateTime(1999, 5, 21), CustomerAddress = "Hà Nội", CustomerNumber = "0364307871", CustomerEmail = "trongnghai@gmai.com", is5FoodMember = true},
+            new Customer() {CustomerCode = "KH0000025", CustomerGroup = "123", CustomerName = "Nguyễn Văn Trọng", CompanyName = "MISA", CustomerBirthday = new DateTime(1999, 12, 26), CustomerAddress = "Hà Nội", CustomerNumber = "0364318795", CustomerEmail = "trong21hai@gmai.com", is5FoodMember = false},
+            new Customer() {CustomerCode = "KH0000026", CustomerGroup = "12", CustomerName = "Nguyễn Thị Thanh Thúy", CompanyName = "MISA", CustomerBirthday = new DateTime(1996, 3, 6), CustomerAddress = "Hà Nội", CustomerNumber = "032459887", CustomerEmail = "trdsahai@gmai.com", is5FoodMember = true},
+            new Customer() {CustomerCode = "KH0000027", CustomerGroup = "1234", CustomerName = "Nguyễn Thị Bích", CompanyName = "MISA", CustomerBirthday = new DateTime(1996, 7, 6), CustomerAddress = "Hà Nội", CustomerNumber = "0348712120", CustomerEmail = "aqqrraas@gmai.com", is5FoodMember = true},
+            new Customer() {CustomerCode = "KH0000028", CustomerGroup = "33", CustomerName = "Nguyễn Thị Thúy Kiều", CompanyName = "MISA", CustomerBirthday = new DateTime(1999, 12, 1), CustomerAddress = "Hà Nội", CustomerNumber = "036641487", CustomerEmail = "tdrdsddsahai@gmai.com", is5FoodMember = false},
+            new Customer() {CustomerCode = "KH0000029", CustomerGroup = "12", CustomerName = "Nguyễn Thị Thúy Vân", CompanyName = "MISA", CustomerBirthday = new DateTime(1996, 3, 3), CustomerAddress = "Hà Nội", CustomerNumber = "0321010458", CustomerEmail = "1dasda4@gmai.com", is5FoodMember = false},
+            new Customer() {CustomerCode = "KH0000030", CustomerGroup = "212", CustomerName = "Nguyễn Chí Phèo", CompanyName = "MISA", CustomerBirthday = new DateTime(1996, 10, 17), CustomerAddress = "Hà Nội", CustomerNumber = "0314453144", CustomerEmail = "asdkaodko125@gmai.com", is5FoodMember = true},
+        };
+        /// <summary>
+        /// Mã khách hàng
+        /// </summary>
+        
+        public Customer()
+        {
+            CustomerId = Guid.NewGuid();
+        }
+        public Guid? CustomerId { get; set; }
+
+        /// <summary>
+        /// Mã nhóm khách hàng
+        /// </summary>
+        public string CustomerGroup { get; set; }
+
+        /// <summary>
+        /// Tên khách hàng
+        /// </summary>
+        public string CustomerName { get; set; }
+
+        /// <summary>
+        ///  Thẻ thành viên
+        /// </summary>
+        public string CustomerCode { get; set; }
+
+        /// <summary>
+        /// Mã số thuế
+        /// </summary>
+        public string CustomerTaxCode { get; set; }
+
+        /// <summary>
+        /// Tên công ty
+        /// </summary>
+        public string CompanyName { get; set; }
+
+        /// <summary>
+        /// Ngày sinh khách hàng
+        /// </summary>
+        public DateTime CustomerBirthday { get; set; }
+
+        /// <summary>
+        /// Địa chỉ khách hàng
+        /// </summary>
+        public string CustomerAddress { get; set; }
+
+        /// <summary>
+        /// Số điện thoại khách hàng
+        /// </summary>
+        public string CustomerNumber { get; set; }
+
+        /// <summary>
+        /// Email khách hàng
+        /// </summary>
+        public string CustomerEmail { get; set; }
+        /// <summary>
+        /// Là thành viên 5Food
+        /// </summary>
+        public bool is5FoodMember { get; set; }
+
+        /// <summary>
+        /// Ghi chú khách hàng
+        /// </summary>
+        public string CustomerNote { get; set; }
+    }
+}
